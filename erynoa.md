@@ -11,7 +11,7 @@
 |--|--|
 | **Mission** | Erynoa CLI — self-contained install and update stack (product scope not defined yet; see `docs/work/ROADMAP.md`) |
 | **Session goal** | `<from user — or: orient + just doctor>` |
-| **Success** | `<e.g. just doctor` and `just test` green · concrete signal>` |
+| **Success** | `just doctor` green · erynoa-gate PASS · no product claims without an owner SPEC (scope still open) |
 | **DX** | `nix develop` · `just` · `just doctor` · `just --list` |
 | **Work-root** | `docs/work/` (SPECs/PLANs) |
 | **Branching** | trunk-based · PRs → `main` |
