@@ -1,0 +1,18 @@
+# growth-budget.toml — anti-bloat budgets for $AGENT_SURFACE_ROOT/bin/growth-gate (skills test-audit ·
+# evidence-retention). Stamped by the Agent Surface. mode = "warn" reports only; a change is judged by the
+# budget of its base. Tighten freely; loosen only on the owner's word.
+mode = "warn"
+work_root = "docs/work"
+exclude = []                        # vendored code, e.g. ["vendor/**"]
+
+[artifacts]
+max_commit_bytes = 2_000_000
+max_commit_new_files = 100
+allow_paths = []                    # paths that may hold binaries, e.g. ["assets/**"]
+
+[tests]
+max_growth_ratio = 1.0              # new test lines ≤ max(min_allowance, ratio × new production lines)
+min_allowance = 150
+max_fix_new_tests = 1               # a fix brings one regression test at the owner boundary
+max_test_file_lines = 800
+ratio_tolerance = 0.05

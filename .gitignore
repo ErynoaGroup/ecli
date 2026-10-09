@@ -1,0 +1,26 @@
+# Erynoa stamp defaults (written only when a repo has no .gitignore).
+# Raw run output stays out of git: summaries and manifests go in, raw bytes go to the evidence store
+# (skill evidence-retention). Checkpoints are refs/snapshots/*, never copies of docs/work.
+.DS_Store
+.env
+.env.*
+.direnv/
+node_modules/
+__pycache__/
+*.pyc
+result
+result-*
+
+# raw run output and bulky artifacts
+*.stdout
+*.stderr
+*.exit
+*.log
+*.original
+*.sqlite
+*.sqlite3
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.part-*
