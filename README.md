@@ -2,7 +2,7 @@
 
 Erynoa CLI — self-contained install and update stack.
 
-Seed commit only: repository was empty (created 2026-09-17), so no default tip existed and a ROADMAP pull request could not open. Product scope is not defined in this file. Next: scaffold `docs/work/ROADMAP.md` via PR.
+Seeded 2026-09-18 (`a9d9ac6`); the work-root [`docs/work/ROADMAP.md`](docs/work/ROADMAP.md) landed via PR #1. Product scope is not defined yet — open questions in [`erynoa.md`](erynoa.md).
 
 <!-- ERYNOA-MODEL:BEGIN -->
 ## Model
