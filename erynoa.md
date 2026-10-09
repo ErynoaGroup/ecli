@@ -81,33 +81,33 @@
 
 | Field | Value |
 |-------|--------|
-| **Project** | `<TODO: name>` |
-| **One-line purpose** | `<TODO>` |
-| **Owners** | `<TODO>` |
-| **Status / tier** | `<TODO>` |
-| **Stack** | `<TODO>` |
+| **Project** | `ecli` — Erynoa CLI |
+| **One-line purpose** | Self-contained install and update stack (README one-liner; scope not yet specified) |
+| **Owners** | ⚑ not recorded in the repo (no CODEOWNERS, no owner field) — see Open questions |
+| **Status / tier** | seed / BOOT only · tier-3 · public (`.repo-index`) |
+| **Stack** | ⚑ not chosen — the tree holds no source code yet (seed `a9d9ac6`, ROADMAP scaffold, stamp `33aacb8`) |
 | **Default branch** | `main` |
-| **last_reviewed** | `YYYY-MM-DD` |
+| **last_reviewed** | 2026-10-09 |
 
 ## North star & non-goals
 
-**North star:** `<TODO>`
+**North star:** ⚑ open — README: "Product scope is not defined in this file"; ROADMAP: "Product scope stays undefined until an owner writes one".
 
 **Non-goals:**
 
-- `<TODO>`
+- ⚑ none recorded yet — to be set with the first product SPEC
 
 ## Invariants
 
-1. **I-1** — `<TODO>`
+1. **I-1** — No product claims beyond the README one-liner until an owner writes a SPEC (ROADMAP BOOT-01)
 2. **I-2** — No secrets in git; config via env/vault only  
-3. **I-3** — `<TODO>`
+3. **I-3** — Public repository — no private hosts, tailnet names, customer or finance data in the tree
 
 ## Forbidden
 
 1. **F-1** — Commit secrets, tokens, private keys, raw PII  
 2. **F-2** — Home skill dirs as SSOT (use Agent Surface)  
-3. **F-3** — `<TODO: repo-specific>`
+3. **F-3** — Invent product scope, commands or a stack in docs without a SPEC from the owner
 
 ## Definition of Done
 
@@ -139,12 +139,16 @@ just doctor
 > **SE-04 C4:** prefer Context + Containers; link `docs/architecture*` for depth. Boxes = real modules/paths.
 
 ```text
-<TODO: actors → containers → key stores/APIs>
+No runtime yet. Repository = seed + docs work-root + agent adapters.
+Target (README): installer/updater CLI for Erynoa — details open.
 ```
 
 | Module / path | Responsibility | May depend on |
 |---------------|----------------|---------------|
-| `<TODO>` | | |
+| `README.md` | One-liner and seed note | — |
+| `docs/work/ROADMAP.md` | Work SSOT (BOOT-01 only) | — |
+| `flake.nix`, `justfile` | Nix/just DX: `shell`, `doctor`, `install` | — |
+| `erynoa.md`, `AGENTS.md`, `CLAUDE.md` | Agent doctrine and adapters (stamped) | Agent Surface |
 
 ## Domain language
 
@@ -152,7 +156,7 @@ just doctor
 
 | Term | Meaning |
 |------|---------|
-| `<TODO>` | |
+| ecli | Erynoa CLI — the product name in README; no domain terms defined yet |
 
 ## Specs & plans
 
@@ -182,7 +186,11 @@ Thin pointers in `AGENTS.md` / `CLAUDE.md` / copilot-instructions → this file.
 
 ## Open questions
 
-- [ ] `<TODO>`
+- [ ] Product scope of `ecli` (what it installs and updates, for whom)
+- [ ] Relation to `eops-cli` (native Erynoa ops CLI) — merge, split or replace?
+- [ ] Language / build stack
+- [ ] Public vs. private: the repo is public — confirm intended
+- [ ] Owners / responsible seat for this repo
 
 ## Decision log
 
